@@ -1,11 +1,19 @@
-eleicoes 2018 1o turno
+# Eleicoes 2018
 
-1. baixe os dados e gera o csv simplificado de presidente e governador:
+Esse projeto permite rodar algumas analises com pandas em cima dos dados eleitorais.
+Vc pode abrir e visualizar os notebooks aqui no github tb :-)
 
+### 1. Preparando dados
+
+Esse script baixa os dados do TSE e gera um csv simplificado com os votos de de presidente e governador
+
+```
 ./geracsv.sh
+```
 
-Isso vai criar o arquivo out.csv
+### 2. Rodando os notebooks
 
-2. importa o csv gerado num banco postgres
-
-ABRA o arquivo gerabd.sh e siga as instruções lá.
+```
+pip install -r requirements.txt
+jupyter notebook
+```
