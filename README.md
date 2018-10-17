@@ -1,7 +1,7 @@
 # Eleicoes 2018
 
 Esse projeto permite rodar algumas analises com pandas em cima dos dados eleitorais.
-Vc pode abrir e visualizar os notebooks aqui no github tb :-)
+Vc pode abrir e visualizar os notebooks aqui no github tb (clica aí nos arquivos .ipynb que vc vai entender)
 
 ### 1. Preparando dados
 
