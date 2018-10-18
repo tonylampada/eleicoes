@@ -5,7 +5,7 @@ Vc pode abrir e visualizar os notebooks aqui no github tb (clica aí nos arquivo
 
 ### 1. Preparando dados
 
-Esse script baixa os dados do TSE e gera um csv simplificado com os votos de de presidente e governador
+Esse script baixa os [dados do TSE](http://www.tse.jus.br/eleicoes/estatisticas/repositorio-de-dados-eleitorais-1/repositorio-de-dados-eleitorais) e gera um csv simplificado (`out.txt`) com os votos de de presidente e governador
 
 ```
 ./geracsv.sh
