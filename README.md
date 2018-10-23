@@ -11,6 +11,8 @@ Esse script baixa os [dados do TSE](http://www.tse.jus.br/eleicoes/estatisticas/
 ./geracsv.sh
 ```
 
+Se vc não tiver linux pra rodar o `shellscript` acima, vc pode [baixar o out.txt](https://drive.google.com/open?id=1UWWphLctcE6cX1mXrkJk2onXSe7cm52j) que eu gerei.
+
 ### 2. Rodando os notebooks
 
 ```
