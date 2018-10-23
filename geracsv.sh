@@ -1,32 +1,32 @@
-function baixa() {
-    wget http://agencia.tse.jus.br/estatistica/sead/eleicoes/eleicoes2018/buweb/BWEB_1t_AC_101020181938.zip
-    wget http://agencia.tse.jus.br/estatistica/sead/eleicoes/eleicoes2018/buweb/BWEB_1t_AL_101020181938.zip
-    wget http://agencia.tse.jus.br/estatistica/sead/eleicoes/eleicoes2018/buweb/BWEB_1t_AM_101020181938.zip
-    wget http://agencia.tse.jus.br/estatistica/sead/eleicoes/eleicoes2018/buweb/BWEB_1t_AP_101020181938.zip
-    wget http://agencia.tse.jus.br/estatistica/sead/eleicoes/eleicoes2018/buweb/BWEB_1t_BA_101020181938.zip
-    wget http://agencia.tse.jus.br/estatistica/sead/eleicoes/eleicoes2018/buweb/BWEB_1t_CE_101020181938.zip
-    wget http://agencia.tse.jus.br/estatistica/sead/eleicoes/eleicoes2018/buweb/BWEB_1t_DF_101020181938.zip
-    wget http://agencia.tse.jus.br/estatistica/sead/eleicoes/eleicoes2018/buweb/BWEB_1t_ES_101020181938.zip
-    wget http://agencia.tse.jus.br/estatistica/sead/eleicoes/eleicoes2018/buweb/BWEB_1t_GO_101020181938.zip
-    wget http://agencia.tse.jus.br/estatistica/sead/eleicoes/eleicoes2018/buweb/BWEB_1t_MA_101020181938.zip
-    wget http://agencia.tse.jus.br/estatistica/sead/eleicoes/eleicoes2018/buweb/BWEB_1t_MG_101020181938.zip
-    wget http://agencia.tse.jus.br/estatistica/sead/eleicoes/eleicoes2018/buweb/BWEB_1t_MS_101020181938.zip
-    wget http://agencia.tse.jus.br/estatistica/sead/eleicoes/eleicoes2018/buweb/BWEB_1t_MT_101020181938.zip
-    wget http://agencia.tse.jus.br/estatistica/sead/eleicoes/eleicoes2018/buweb/BWEB_1t_PA_101020181938.zip
-    wget http://agencia.tse.jus.br/estatistica/sead/eleicoes/eleicoes2018/buweb/BWEB_1t_PB_101020181938.zip
-    wget http://agencia.tse.jus.br/estatistica/sead/eleicoes/eleicoes2018/buweb/BWEB_1t_PE_101020181938.zip
-    wget http://agencia.tse.jus.br/estatistica/sead/eleicoes/eleicoes2018/buweb/BWEB_1t_PI_101020181938.zip
-    wget http://agencia.tse.jus.br/estatistica/sead/eleicoes/eleicoes2018/buweb/BWEB_1t_PR_101020181938.zip
-    wget http://agencia.tse.jus.br/estatistica/sead/eleicoes/eleicoes2018/buweb/BWEB_1t_RJ_101020181938.zip
-    wget http://agencia.tse.jus.br/estatistica/sead/eleicoes/eleicoes2018/buweb/BWEB_1t_RN_101020181938.zip
-    wget http://agencia.tse.jus.br/estatistica/sead/eleicoes/eleicoes2018/buweb/BWEB_1t_RO_101020181938.zip
-    wget http://agencia.tse.jus.br/estatistica/sead/eleicoes/eleicoes2018/buweb/BWEB_1t_RR_101020181938.zip
-    wget http://agencia.tse.jus.br/estatistica/sead/eleicoes/eleicoes2018/buweb/BWEB_1t_RS_101020181938.zip
-    wget http://agencia.tse.jus.br/estatistica/sead/eleicoes/eleicoes2018/buweb/BWEB_1t_SC_101020181938.zip
-    wget http://agencia.tse.jus.br/estatistica/sead/eleicoes/eleicoes2018/buweb/BWEB_1t_SE_101020181938.zip
-    wget http://agencia.tse.jus.br/estatistica/sead/eleicoes/eleicoes2018/buweb/BWEB_1t_SP_101020181938.zip
-    wget http://agencia.tse.jus.br/estatistica/sead/eleicoes/eleicoes2018/buweb/BWEB_1t_TO_101020181938.zip
-    wget http://agencia.tse.jus.br/estatistica/sead/eleicoes/eleicoes2018/buweb/BWEB_1t_ZZ_111020181508.zip
+function baixaTudo() {
+    baixa AC
+    baixa AL
+    baixa AM
+    baixa AP
+    baixa BA
+    baixa CE
+    baixa DF
+    baixa ES
+    baixa GO
+    baixa MA
+    baixa MG
+    baixa MS
+    baixa MT
+    baixa PA
+    baixa PB
+    baixa PE
+    baixa PI
+    baixa PR
+    baixa RJ
+    baixa RN
+    baixa RO
+    baixa RR
+    baixa RS
+    baixa SC
+    baixa SE
+    baixa SP
+    baixa TO
+    wget -c http://agencia.tse.jus.br/estatistica/sead/eleicoes/eleicoes2018/buweb/BWEB_1t_ZZ_111020181508.zip
 }
 
 function readstate() {
@@ -44,7 +44,12 @@ function readstate() {
     rm *.pdf
 }
 
-baixa
+function baixa() {
+    sigla=$1
+    wget -c http://agencia.tse.jus.br/estatistica/sead/eleicoes/eleicoes2018/buweb/BWEB_1t_${sigla}_101020181938.zip
+}    
+
+baixaTudo
 readstate AC
 readstate AL
 readstate AM
